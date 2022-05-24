@@ -16,8 +16,9 @@
 		C4B62FB1283C62E3007359DA /* BreakingBadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62FB0283C62E3007359DA /* BreakingBadTests.swift */; };
 		C4B62FBB283C62E3007359DA /* BreakingBadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62FBA283C62E3007359DA /* BreakingBadUITests.swift */; };
 		C4B62FBD283C62E3007359DA /* BreakingBadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62FBC283C62E3007359DA /* BreakingBadUITestsLaunchTests.swift */; };
-		C4B62FCE283D1C23007359DA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62FCC283D1C23007359DA /* TableViewCell.swift */; };
-		C4B62FCF283D1C23007359DA /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B62FCD283D1C23007359DA /* TableViewCell.xib */; };
+		C4B62FD2283D22E9007359DA /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62FD0283D22E9007359DA /* CharacterTableViewCell.swift */; };
+		C4B62FD3283D22E9007359DA /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B62FD1283D22E9007359DA /* CharacterTableViewCell.xib */; };
+		C4BE19D9283D2797009840C8 /* CharacterTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BE19D8283D2797009840C8 /* CharacterTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		C4B62FB6283C62E3007359DA /* BreakingBadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakingBadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B62FBA283C62E3007359DA /* BreakingBadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadUITests.swift; sourceTree = "<group>"; };
 		C4B62FBC283C62E3007359DA /* BreakingBadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C4B62FCC283D1C23007359DA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		C4B62FCD283D1C23007359DA /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		C4B62FD0283D22E9007359DA /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		C4B62FD1283D22E9007359DA /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
+		C4BE19D8283D2797009840C8 /* CharacterTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				C4B62F9D283C62E0007359DA /* ViewController.swift */,
-				C4B62FCC283D1C23007359DA /* TableViewCell.swift */,
-				C4B62FCD283D1C23007359DA /* TableViewCell.xib */,
+				C4B62FD0283D22E9007359DA /* CharacterTableViewCell.swift */,
+				C4B62FD1283D22E9007359DA /* CharacterTableViewCell.xib */,
+				C4BE19D8283D2797009840C8 /* CharacterTableVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B62FA6283C62E3007359DA /* LaunchScreen.storyboard in Resources */,
-				C4B62FCF283D1C23007359DA /* TableViewCell.xib in Resources */,
+				C4B62FD3283D22E9007359DA /* CharacterTableViewCell.xib in Resources */,
 				C4B62FA3283C62E3007359DA /* Assets.xcassets in Resources */,
 				C4B62FA1283C62E0007359DA /* Main.storyboard in Resources */,
 			);
@@ -290,7 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B62F9E283C62E0007359DA /* ViewController.swift in Sources */,
-				C4B62FCE283D1C23007359DA /* TableViewCell.swift in Sources */,
+				C4B62FD2283D22E9007359DA /* CharacterTableViewCell.swift in Sources */,
+				C4BE19D9283D2797009840C8 /* CharacterTableVC.swift in Sources */,
 				C4B62F9A283C62E0007359DA /* AppDelegate.swift in Sources */,
 				C4B62F9C283C62E0007359DA /* SceneDelegate.swift in Sources */,
 			);
