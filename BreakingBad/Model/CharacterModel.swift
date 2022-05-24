@@ -18,5 +18,4 @@ struct CharacterModel: Codable {
     let nickname: String
     let apperance: [Int]
     let portrayed: String
-    let category: String
 }

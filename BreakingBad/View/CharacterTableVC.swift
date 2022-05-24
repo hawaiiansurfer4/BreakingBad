@@ -20,19 +20,18 @@ class CharacterTableVC: UITableViewController {
         tableView.register(UINib(nibName: "CharacterTableViewCell", bundle: nil), forCellReuseIdentifier: "CharacterCell")
     }
 
+    @IBOutlet weak var filterButton: UINavigationItem!
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterTableViewCell
         cell.characterLabel.text = characterArray[indexPath.row].name
         if let imageURL = characterArray[indexPath.row].image as? String {
-            do {
-                try AF.request(imageURL).responseImage { (response) in
+                AF.request(imageURL).responseImage { (response) in
                     if case .success(let image) = response.result {
                         cell.characterImage.image = image
                     }
                 }
-            } catch {
                 print("Error grabbing image")
-            }
 
         }
         return cell
@@ -43,6 +42,7 @@ class CharacterTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return characterArray.count
     }
 
