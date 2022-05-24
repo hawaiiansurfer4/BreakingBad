@@ -9,7 +9,7 @@ import UIKit
 
 class CharacterTableVC: UITableViewController {
     
-    var characterArray = [CharacterInfo]()
+    var characterArray = [CharacterModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +19,20 @@ class CharacterTableVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterTableViewCell
+        cell.characterLabel.text = characterArray[indexPath.row].name
+        if let imageURL = characterArray[indexPath.row].image {
+//            cell.characterImage.image = image
+        }
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return characterArray.count
     }
     
     

@@ -20,6 +20,7 @@
 		C4B62FD3283D22E9007359DA /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B62FD1283D22E9007359DA /* CharacterTableViewCell.xib */; };
 		C4BE19D9283D2797009840C8 /* CharacterTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BE19D8283D2797009840C8 /* CharacterTableVC.swift */; };
 		C4BE19DD283D2C32009840C8 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BE19DC283D2C32009840C8 /* CharacterModel.swift */; };
+		C4BE19DF283D3A76009840C8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BE19DE283D3A76009840C8 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		C4B62FD1283D22E9007359DA /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		C4BE19D8283D2797009840C8 /* CharacterTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableVC.swift; sourceTree = "<group>"; };
 		C4BE19DC283D2C32009840C8 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		C4BE19DE283D3A76009840C8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		C4B62FCA283D19F4007359DA /* View-Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4BE19DE283D3A76009840C8 /* NetworkManager.swift */,
 			);
 			path = "View-Model";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				C4B62F9E283C62E0007359DA /* ViewController.swift in Sources */,
 				C4B62FD2283D22E9007359DA /* CharacterTableViewCell.swift in Sources */,
 				C4BE19D9283D2797009840C8 /* CharacterTableVC.swift in Sources */,
+				C4BE19DF283D3A76009840C8 /* NetworkManager.swift in Sources */,
 				C4BE19DD283D2C32009840C8 /* CharacterModel.swift in Sources */,
 				C4B62F9A283C62E0007359DA /* AppDelegate.swift in Sources */,
 				C4B62F9C283C62E0007359DA /* SceneDelegate.swift in Sources */,
