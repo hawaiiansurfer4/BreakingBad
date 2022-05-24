@@ -23,9 +23,9 @@ class CharacterDetailsVC: UIViewController, UITableViewDelegate, UITableViewData
         var listofDetails = ["Occupation", "Status", "Nickname", "Season Appearance", "Portrayed"]
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterDetails", for: indexPath)
 //        cell.textLabel?.text =
-        for detail in 2..<detailsArray.count {
-            cell.textLabel?.text = listofDetails[detail]
-        }
+//        for detail in 2..<detailsArray.count {
+//            cell.textLabel?.text = listofDetails[detail]
+//        }
         return cell
     }
 

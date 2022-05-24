@@ -11,7 +11,8 @@ import AlamofireImage
 
 class CharacterTableVC: UITableViewController {
 
-    var characterArray = [CharacterModel]()
+    var imageArray = [String]()
+    var nameArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,8 @@ class CharacterTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterTableViewCell
-        cell.characterLabel.text = characterArray[indexPath.row].name
-        if let imageURL = characterArray[indexPath.row].image as? String {
+        cell.characterLabel.text = nameArray[indexPath.row]
+        if let imageURL = imageArray[indexPath.row] as? String {
                 AF.request(imageURL).responseImage { (response) in
                     if case .success(let image) = response.result {
                         cell.characterImage.image = image
@@ -43,7 +44,11 @@ class CharacterTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return characterArray.count
+        return nameArray.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let characterDetailVC = segue.destination as? CharacterDetailsVC else { return }
     }
 
 
