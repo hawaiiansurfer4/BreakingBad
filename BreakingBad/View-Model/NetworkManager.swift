@@ -5,54 +5,59 @@
 //  Created by Sean Murphy on 5/24/22.
 //
 
-import Foundation
+import UIKit
+import Alamofire
+import AlamofireImage
 
 protocol CharacterManagerDelegate {
-    func didUpdateCharacter(_ charcterData: CharacterData)
-    func didFailWithError(error: Error)
+    func fetchCharacters(characterData: [CharacterData], networkManager: NetworkManager?)
 }
 
-class NetworkManager {
-    let urlString = "https://breakingbadapi.com/api/characters"
-    
-    func performRequest() {
-        let session = URLSession(configuration: .default)
+let urlString = "https://breakingbadapi.com/api/characters"
+
+struct NetworkManager {
+
+    var delegate: CharacterManagerDelegate?
+    func fetchChar() {
         guard let url = URL(string: urlString) else {
-            fatalError("Error converting ")
+            fatalError()
         }
+        performRequest(url: url)
+    }
+    
+    func performRequest(url: URL) {
+        let session = URLSession(configuration: .default)
+
         let task = session.dataTask(with: url) { data, resp, error in
-            guard error != nil else { return }
-            
+            guard error == nil else { return }
+            var nameArray = [String]()
+            var occupationArray = [[String]]()
+            var imageURLArray = [URL]()
+            var statusArray = [String]()
+            var nicknameArray = [String]()
+            var appearanceArray = [[Int]]()
+            var portrayedArray = [String]()
             if let safeData = data {
-                self.parseJSON(safeData)
+                do {
+                    let decoder = JSONDecoder()
+                    let response = try decoder.decode([Character].self, from: safeData)
+                    for i in 0..<response.count {
+                        nameArray.append(response[i].name)
+                        occupationArray.append(response[i].occupation)
+                        imageURLArray.append(response[i].img)
+                        statusArray.append(response[i].status)
+                        nicknameArray.append(response[i].nickname)
+                        appearanceArray.append(response[i].appearance)
+                        portrayedArray.append(response[i].portrayed)
+                    }
+                    let characterReturn = CharacterData(name: nameArray, imageURLArray: imageURLArray, occupationMatrix: occupationArray, status: statusArray, nickname: nicknameArray, seasonApperance: appearanceArray)
+                    self.delegate?.fetchCharacters(characterData: [characterReturn], networkManager: self)
+                } catch {
+                    fatalError()
+                }
+                
             }
         }
         task.resume()
-    }
-    
-    func parseJSON(_ data: Data) -> CharacterData? {
-        let decoder = JSONDecoder()
-        var imageStringArray = [String]()
-        var birthdayArray = [Date]()
-        var nameArray = [String]()
-        var occupation = [[String]]()
-        var status = [String]()
-        var nickname = [String]()
-        var seasonAppearance = [[Int]]()
-        do {
-            let decodedJSON = try decoder.decode(CharacterModel.self, from: data)
-            imageStringArray.append(contentsOf: [decodedJSON.image])
-            nameArray.append(contentsOf: [decodedJSON.name])
-            occupation.append(contentsOf: [decodedJSON.occupation])
-            status.append(contentsOf: [decodedJSON.status])
-            nickname.append(contentsOf: [decodedJSON.nickname])
-            seasonAppearance.append(contentsOf: [decodedJSON.apperance])
-            birthdayArray.append(contentsOf: [decodedJSON.birthday])
-            var character = CharacterData(name: nameArray, birthday: birthdayArray, occupationMatrix: occupation, status: status, nickname: nickname, seasonApperance: seasonAppearance)
-            return character
-        } catch {
-            fatalError("Failed to decode the JSON")
-            return nil
-        }
     }
 }

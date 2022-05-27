@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-struct CharacterModel: Codable {
-    let char_id: Int
-    let image: String
+struct Character: Codable {
     let name: String
-    let birthday: Date
+//    let birthday: Date
     let occupation: [String]
+    let img: URL
     let status: String
     let nickname: String
-    let apperance: [Int]
+    let appearance: [Int]
     let portrayed: String
 }
+

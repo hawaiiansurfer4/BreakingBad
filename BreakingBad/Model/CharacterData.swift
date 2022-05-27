@@ -9,9 +9,18 @@ import Foundation
 
 struct CharacterData {
     var name: [String]
-    var birthday: [Date]
+    var imageURLArray: [URL]
     var occupationMatrix: [[String]]
     var status: [String]
     var nickname: [String]
     var seasonApperance: [[Int]]
+    
+    mutating func clearData() {
+        self.name.removeAll()
+        self.imageURLArray.removeAll()
+        self.occupationMatrix.removeAll()
+        self.status.removeAll()
+        self.nickname.removeAll()
+        self.seasonApperance.removeAll()
+    }
 }
