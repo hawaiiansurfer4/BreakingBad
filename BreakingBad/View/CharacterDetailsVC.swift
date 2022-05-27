@@ -7,27 +7,21 @@
 
 import UIKit
 
-class CharacterDetailsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CharacterDetailsVC: UIViewController {
     
-
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nicknameLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var appearanceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        imageView.image =
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var listofDetails = ["Occupation", "Status", "Nickname", "Season Appearance", "Portrayed"]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterDetails", for: indexPath)
-//        cell.textLabel?.text =
-//        for detail in 2..<detailsArray.count {
-//            cell.textLabel?.text = listofDetails[detail]
-//        }
-        return cell
-    }
 
 
 }

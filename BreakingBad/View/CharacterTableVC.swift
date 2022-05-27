@@ -55,6 +55,7 @@ class CharacterTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "characterDetailsSegue", sender: indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
@@ -67,7 +68,7 @@ class CharacterTableVC: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let characterDetailVC = segue.destination as? CharacterDetailsVC else { return }
+        guard let characterDetailsSegue = segue.destination as? CharacterDetailsVC else { return }
     }
 
 }

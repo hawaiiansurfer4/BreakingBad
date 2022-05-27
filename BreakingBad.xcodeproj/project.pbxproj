@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		965CFE8C23E61257A268E440 /* Pods_BreakingBad_BreakingBadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D281BF3F599EAB3E88374B00 /* Pods_BreakingBad_BreakingBadUITests.framework */; };
 		B825B5DFD6C56DE1C9CA4597 /* Pods_BreakingBadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D45C81E514044D2825E3D0 /* Pods_BreakingBadTests.framework */; };
+		C45B361D28413D0D00DB00B6 /* CharacterDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B361C28413D0D00DB00B6 /* CharacterDetailsManager.swift */; };
 		C4B62F9A283C62E0007359DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62F99283C62E0007359DA /* AppDelegate.swift */; };
 		C4B62F9C283C62E0007359DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62F9B283C62E0007359DA /* SceneDelegate.swift */; };
 		C4B62F9E283C62E0007359DA /* CharacterDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62F9D283C62E0007359DA /* CharacterDetailsVC.swift */; };
@@ -51,6 +52,7 @@
 		8B3C4FAA4EC2665FF89BC436 /* Pods-BreakingBadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadTests.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadTests/Pods-BreakingBadTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96D45C81E514044D2825E3D0 /* Pods_BreakingBadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1582C38A27CDD0AC3C3DA6B /* Pods-BreakingBad-BreakingBadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBad-BreakingBadUITests.release.xcconfig"; path = "Target Support Files/Pods-BreakingBad-BreakingBadUITests/Pods-BreakingBad-BreakingBadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C45B361C28413D0D00DB00B6 /* CharacterDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsManager.swift; sourceTree = "<group>"; };
 		C4B62F96283C62E0007359DA /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B62F99283C62E0007359DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B62F9B283C62E0007359DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				C4BE19DE283D3A76009840C8 /* NetworkManager.swift */,
+				C45B361C28413D0D00DB00B6 /* CharacterDetailsManager.swift */,
 			);
 			path = "View-Model";
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				C4BE19DF283D3A76009840C8 /* NetworkManager.swift in Sources */,
 				C4BE19DD283D2C32009840C8 /* CharacterModel.swift in Sources */,
 				C4BE19E3283D5704009840C8 /* CharacterData.swift in Sources */,
+				C45B361D28413D0D00DB00B6 /* CharacterDetailsManager.swift in Sources */,
 				C4B62F9A283C62E0007359DA /* AppDelegate.swift in Sources */,
 				C4B62F9C283C62E0007359DA /* SceneDelegate.swift in Sources */,
 			);
