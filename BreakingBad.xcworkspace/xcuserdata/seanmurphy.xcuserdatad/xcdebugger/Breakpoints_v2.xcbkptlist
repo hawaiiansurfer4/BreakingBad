@@ -3,4 +3,180 @@
    uuid = "2D22205D-1D3B-490C-87B5-514C5464BD89"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9ED082D2-EB09-40B4-B23F-FDCEFE488F1B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BreakingBad/View-Model/CharacterDetailsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "grabDetails(characterData:networkManager:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9ED082D2-EB09-40B4-B23F-FDCEFE488F1B - 61f2891c38c732eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;__C.UIImage, Alamofire.AFError&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in BreakingBad.CharacterDetailsManager.grabDetails(characterData: Swift.Array&lt;BreakingBad.CharacterData&gt;, networkManager: BreakingBad.NetworkManager) -&gt; ()"
+                  moduleName = "BreakingBad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seanmurphy/Devolper/DevRefresher/BreakingBad/BreakingBad/View-Model/CharacterDetailsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "9ED082D2-EB09-40B4-B23F-FDCEFE488F1B - 61f2891c38c732eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;__C.UIImage, Alamofire.AFError&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in BreakingBad.CharacterDetailsManager.grabDetails(characterData: Swift.Array&lt;BreakingBad.CharacterData&gt;, networkManager: BreakingBad.NetworkManager) -&gt; ()"
+                  moduleName = "BreakingBad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seanmurphy/Devolper/DevRefresher/BreakingBad/BreakingBad/View-Model/CharacterDetailsManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "161">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "233B582F-1EE5-43D9-8526-4F583ED7712D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BreakingBad/View-Model/CharacterDetailsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "grabDetails(characterData:networkManager:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C53E604F-5400-4099-A1E2-FE0061A42C64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BreakingBad/Controllers/CharacterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4548032B-94B9-4D85-ADBE-123A12B6ED9F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BreakingBad/Controllers/CharacterDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "4548032B-94B9-4D85-ADBE-123A12B6ED9F - aae538f8025c55a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BreakingBad.CharacterDetailViewController.character.getter : BreakingBad.Character"
+                  moduleName = "BreakingBad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seanmurphy/Devolper/DevRefresher/BreakingBad/BreakingBad/Controllers/CharacterDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "4548032B-94B9-4D85-ADBE-123A12B6ED9F - 6fbe5ed54e96e9d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BreakingBad.CharacterDetailViewController.character.setter : BreakingBad.Character"
+                  moduleName = "BreakingBad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seanmurphy/Devolper/DevRefresher/BreakingBad/BreakingBad/Controllers/CharacterDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "157">
+               </Location>
+               <Location
+                  uuid = "4548032B-94B9-4D85-ADBE-123A12B6ED9F - 490db316cd6b8aa6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BreakingBad.CharacterDetailViewController.character.modify : BreakingBad.Character"
+                  moduleName = "BreakingBad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seanmurphy/Devolper/DevRefresher/BreakingBad/BreakingBad/Controllers/CharacterDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4548032B-94B9-4D85-ADBE-123A12B6ED9F - 6035efbac6b96c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BreakingBad.CharacterDetailViewController.character.modify : BreakingBad.Character with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BreakingBad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seanmurphy/Devolper/DevRefresher/BreakingBad/BreakingBad/Controllers/CharacterDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2B44E9C-7EBB-49C2-84A3-880CE7737D35"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BreakingBad/Controllers/CharacterDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "setupUI()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
