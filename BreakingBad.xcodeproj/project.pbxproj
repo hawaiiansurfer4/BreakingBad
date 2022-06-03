@@ -17,6 +17,8 @@
 		C483CA252846F22C0004026E /* CharactersModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C483CA232846F22C0004026E /* CharactersModel.xcdatamodeld */; };
 		C483CA662847BB020004026E /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C483CA652847BB020004026E /* CharacterTableViewCell.xib */; };
 		C483CA682847BB160004026E /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483CA672847BB160004026E /* CharacterTableViewCell.swift */; };
+		C483CA6A2847E3C70004026E /* CharacterStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483CA692847E3C70004026E /* CharacterStorage.swift */; };
+		C483CA6C28481B010004026E /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483CA6B28481B010004026E /* CharacterDetailsViewModel.swift */; };
 		C4B62F9A283C62E0007359DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62F99283C62E0007359DA /* AppDelegate.swift */; };
 		C4B62F9C283C62E0007359DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B62F9B283C62E0007359DA /* SceneDelegate.swift */; };
 		C4B62FA1283C62E0007359DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B62F9F283C62E0007359DA /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		C483CA242846F22C0004026E /* CharactersModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CharactersModel.xcdatamodel; sourceTree = "<group>"; };
 		C483CA652847BB020004026E /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		C483CA672847BB160004026E /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		C483CA692847E3C70004026E /* CharacterStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStorage.swift; sourceTree = "<group>"; };
+		C483CA6B28481B010004026E /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
 		C4B62F96283C62E0007359DA /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B62F99283C62E0007359DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B62F9B283C62E0007359DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C483CA17284686360004026E /* WebService.swift */,
+				C483CA692847E3C70004026E /* CharacterStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C483CA1F2846914C0004026E /* CharacterViewModel.swift */,
+				C483CA6B28481B010004026E /* CharacterDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -463,10 +469,12 @@
 				C483CA1C28468BF70004026E /* Character.swift in Sources */,
 				C483CA202846914C0004026E /* CharacterViewModel.swift in Sources */,
 				C483CA682847BB160004026E /* CharacterTableViewCell.swift in Sources */,
+				C483CA6A2847E3C70004026E /* CharacterStorage.swift in Sources */,
 				C4B62F9A283C62E0007359DA /* AppDelegate.swift in Sources */,
 				C483CA18284686360004026E /* WebService.swift in Sources */,
 				C483CA22284695050004026E /* CharacterDetailViewController.swift in Sources */,
 				C483CA1E28468CAD0004026E /* CharacterVC.swift in Sources */,
+				C483CA6C28481B010004026E /* CharacterDetailsViewModel.swift in Sources */,
 				C4B62F9C283C62E0007359DA /* SceneDelegate.swift in Sources */,
 				C483CA252846F22C0004026E /* CharactersModel.xcdatamodeld in Sources */,
 			);

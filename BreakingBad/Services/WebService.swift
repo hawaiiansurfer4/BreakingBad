@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 enum NetworkError: Error {
     case domainError
@@ -18,7 +19,7 @@ struct Resource<T: Codable> {
     let url: URL
 }
 
-class WebServie {
+class WebService {
     
     func load<T>(resource: Resource<T>, completion: @escaping (Result<T, NetworkError>) -> Void) {
         
@@ -39,4 +40,5 @@ class WebServie {
             }
         }.resume()
     }
+    
 }

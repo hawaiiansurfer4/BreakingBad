@@ -15,6 +15,7 @@ class CharacterVC: UITableViewController {
     @IBOutlet weak var filterButton: UINavigationItem!
     
     var characterListViewModel = CharacterListViewModel()
+    var characterDetailsViewModel: CharacterDetailsViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +23,21 @@ class CharacterVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CharacterTableViewCell", bundle: nil), forCellReuseIdentifier: "CharacterCell")
-        loadCharacters()
+        loadCharactersForUI()
 
     }
     
-    func loadCharacters() {
+    func loadCharactersForUI() {
+//        self.characterDetailsViewModel = CharacterDetailsViewModel()
+//        self.characterDetailsViewModel.bindCharacterDetailsViewModelToController = {
+//
+//        }
         guard let charactersURL = URL(string: "https://breakingbadapi.com/api/characters") else {
             fatalError("URL was incorrect")
         }
         let resource = Resource<[Character]>(url: charactersURL)
-        
-        WebServie().load(resource: resource) { [weak self] result in
+
+        WebService().load(resource: resource) { [weak self] result in
             switch result {
             case .success(let character):
                 self?.characterListViewModel.charactersViewModel = character.map(CharacterViewModel.init)
@@ -77,8 +82,17 @@ class CharacterVC: UITableViewController {
         self.navigationController?.pushViewController(characterDetailViewController, animated: true)
 
     }
-    
 
+}
+
+extension CharacterVC: CharacterDetailsViewModelDelegate {
+    func didFetchCharacters() {
+        
+    }
+    
+    func didFailWithError(error: Error) {
+        
+    }
     
     
 }
